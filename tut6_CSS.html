@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            /* for all the content */
+           /* box-sizing: border-box=> it includes padding too;  */
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        }
+        .container{
+            width: 700px;
+            border: 20px solid turquoise;
+            background-color: #e3fb0b;
+            margin: auto;
+
+        }
+        .item{
+            border: 3px solid red;
+            margin: 12px 3px;
+            padding: 12px 30px;
+            background: #33939969;
+
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+            
+        }
+        #computer{
+            float: left;
+            width: 48%;
+            
+
+        }
+        #stationary{
+            /* float: left; */
+            clear: left;
+            width: 100%;
+            /* by changing this to clear:left the boxes came within the outer border box(aquamarine) */
+
+        }
+        p,h3,{
+            /* text-align:right ;
+            text-align: center;
+            text-align: left; 
+            THE ONE AT LAST HAS THE HIGHEST PRIORITY*/
+            text-align: justify;
+        }
+        h1{
+            width: 443px;
+            margin: auto;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my market</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+           <p>
+           Lorem ipsum dolor sit ameLOrem20
+            t consectetur adipisicing elit. Veritatis animi cum eveniet placeat ratione nulla optio culpa minus, quisquam quod excepturi ex, l Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem in laudantium voluptatum deleniti voluptatem odio mollitia inventore dicta, autem quibusdam.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi cum eveniet placeat ratione nulla optio culpa minus, quisquam quod excepturi ex, laborum distinctio velit ullam officiis porro dolor tempore pariatur obcaecati suscipit earum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim consequatur consectetur in pariatur facilis assumenda nulla quibusdam placeat provident, incidunt nesciunt deserunt labore quia doloremque numquam molestias quod minima consequuntur officiis ipsum! Quae excepturi quim. Voluptas beatae inventore impedit.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi cum eveniet placeat ratione nulla optio culpa minus, quisquam quod excepturi ex, laborum distinctio velit ullam officiis porro dolor tempore pariatur obcaecati suscipit earum repellat ab praesentium? Odio eaque qui adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, minima?</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

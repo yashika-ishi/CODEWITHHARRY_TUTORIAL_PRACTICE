@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>]
+
+    <!-- internal CSS -->
+    <style>
+        p{
+            color: #a4df0d;
+            background-color: blueviolet !important;
+            /* !important gives it HIGHEST priority */
+        }
+        </style>
+
+    <!-- External CSS -->
+     <link rel="Stylesheet" href="tut1.css">
+
+    <!-- *********************LOWER the Code => HIGHER the Order*************************** 
+    here external css has higher priority than internal-->
+
+</head>
+
+<body>
+    <!-- inline CSS -->
+    <!--********************** inline has highest priority******************** -->
+    <p style="color: rgb(19, 223, 223); background-color: rgb(197, 204, 4);">this is a line</p>
+
+    <hr color="blueviolet">
+
+    <p>Ye bhi line hi hai...</p>
+</body>
+</html

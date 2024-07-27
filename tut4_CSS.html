@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model and allignment</title>
+    <style>
+        body{
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        }
+        #border{
+            border: 9px solid aquamarine;
+            border-width: 20px;
+            width: 400px;
+            padding: 20px;
+            margin: auto;
+
+        }
+        .centre{
+            text-align: center;
+            color: antiquewhite;
+        }
+        .container{
+            background-color: antiquewhite;
+            border: 3px solid hotpink;
+            border-width: 10px;
+            border-radius: 40px;
+            /* padding: 30px;
+            padding-left: 16px;
+            padding-top: 51px; */
+             padding: 23px 78px 6px 78px; /*padding= top right bottom left */
+             
+            margin: 30px;
+            width: 370px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="centre">Box model</h1>
+    <img src="CSS-Box-Model.avif" width="300" height="200">
+    <hr>
+    <a href="https://cssgradient.io/" target="_blank" class="centre">This is link to generate a gradiant colour syntax in css</a>
+    <hr>
+    <div id="border">
+        <div class="container">
+
+            <h3>Heading </h3>
+            <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti similique minus totam, repellendus deserunt eligendi! Adipisci architecto recusandae consequuntur voluptatum et voluptas veniam laudantium expedita.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Heading </h3>
+            <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti similique minus totam, repellendus deserunt eligendi! Adipisci architecto recusandae consequuntur voluptatum et voluptas veniam laudantium expedita.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Heading </h3>
+            <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deleniti similique minus totam, repellendus deserunt eligendi! Adipisci architecto recusandae consequuntur voluptatum et voluptas veniam laudantium expedita.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

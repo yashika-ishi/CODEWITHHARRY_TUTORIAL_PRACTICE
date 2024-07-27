@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Enter the details(Compulsion)</h2>
+    <form action="backend.php">
+        <!-- lable for id 123: the text box gets dark on being selected -->
+        <label for="123">NAME:</label>
+        <div> 
+            <!-- For moving the box in next line -->
+            <input type="text" id="123">
+        </div>
+        <div>
+            DOB :<input type="date">  
+        </div>
+        <div।>
+            Phone no. : <input type="number">
+            
+        </div>
+        <div>
+            Class: <input type="text">
+            
+        </div>
+        <div>
+            Fav IDOL GROUP: <input type="text">
+            
+        </div>
+        <div>
+            <!-- by default if u want it checked -->
+            Teenager: <input type="checkbox" checked>
+            
+        </div>
+        <div>
+            Extrovert: <input type="range">
+            
+        </div>
+        <div>
+            Email:<input type="email">
+        </div>
+        <div>
+            Gender<br>
+            Male:<input type="checkbox" name="MyGender">
+            Female:<input type="checkbox" name="MyGender">
+            Other:<input type="checkbox" name="MyGender">
+        </div>
+        <div>
+            Write about yourself:<br><textarea name="mytext" cols="80" rows="10"> </textarea>
+        </div>
+        <div>
+            <label for="colour">Favourite Colour </label>
+            <select name="Mycolour" id="colour">
+                <option value="bk">Black</option>
+                <option value="lvdr">Lavender</option>
+                <option value="Nvy">Navy</option>
+            </select>
+        </div>
+        <div>
+            <label for="cod">Mythical creature </label>
+            <select name="Mycreature" id="our">
+                <option value="gffn">Griffen</option>
+                <option value="uni" selected>Unicorn</option>
+                <option value="fry">Fairy</option>
+            </select>
+        </div>
+        <div>
+            Submit: <input type="submit">
+            Reset: <input type="reset">
+        
+        </div>
+        
+        
+    </form>
+</body>
+</html>

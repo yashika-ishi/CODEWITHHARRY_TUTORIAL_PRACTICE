@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion:absolute,relative,fixed,sticky</title>
+    <style>
+        .box{
+            display:inline-block ;
+            border: 2px solid greenyellow;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+/*             
+            /* relative to its normal position and will leave a gap at its normal position
+            position: relative;*/
+             
+             /*absolute is relative to the postion of first parent
+             position: absolute; */
+             /* position: sticky; for menu's , stay sticked to the window */
+              
+            /* top: 34px;
+            left: 34px; */
+            
+             position: fixed; /*For chat box */
+            bottom: 4px;
+            right: 3px;
+        }
+        .container{
+            background-color: rgb(165, 42, 122);
+          
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">Haa</div>
+        <div class="box" id="box2">HEE</div>
+        <div class="box" id="box3">HOO</div>
+        <div class="box" id="box37">HOO</div>
+        <div class="box" id="box30">HOO</div>
+        <div class="box" id="box3u">HOO</div>
+        <div class="box" id="box3jm">HOO</div>
+        <div class="box" id="box3n">HOO</div>
+        <div class="box" id="box3m">HOO</div>
+        <div class="box" id="box4">HAE</div>
+    </div>
+    
+</body>
+</html>

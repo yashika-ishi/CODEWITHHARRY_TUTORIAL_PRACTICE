@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <style>
+        .container{
+            width: 100%;
+            height: 540px;
+            background-color: tomato;
+            border: 20px solid pink;
+            display: flex;
+            /*....... felxbox properties......... */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+
+            /* ..................justufy.......... */
+            /* justify-content: center ;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+
+           /* .............align-items: ........... */
+            align-items: center;
+            align-items: flex-start;
+            align-items: stretch;
+
+        }
+     h1{font-size: 50px;
+    margin: 30%;}
+        .box{
+            background-color: rgb(205, 231, 241);
+            margin:4px;
+            border: 2px solid blueviolet;
+            padding: 1px;
+            width: 100px;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<h1>This is it!!!!!!</h1> 
+<body>
+    <div class="container">
+        <div class="box" id="box">1</div>
+        <div class="box" id="box">2</div>
+        <div class="box" id="box">3</div>
+        <div class="box" id="box">4</div>
+        <div class="box" id="box">5</div>
+    </div>
+    
+</body>
+</html>
